@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie Oliver</title>
+    <!-- Box-icon and Font Awesome links -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="blog">
+    <!-- Header Section -->
+    <header>
+        <!-- Navigation Section -->
+        <nav>
+            <!-- Logo Section -->
+            <figure class="logo">
+                <img src="image/logo.png" alt="">
+            </figure>
+            <!-- Menu Icon -->
+            <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!-- Menu List -->
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutPage.html">About</a></li>
+                <li><a href="blogsPage.html" class="active">Blogs</a></li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+            <!-- Search Box Section -->
+            <div class="search-box">
+                <input type="text" placeholder="Search here...">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+        </nav>  
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">A Taste of Jamie's World!</h2>
+            <span class="home-subtitle">Your source for great recipes</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <article class="about container" id="about">
+        <div class="contentBx">
+            <!-- About Title -->
+            <h2 class="titleText">Feeding Hearts, Not Just Appetites</h2>
+            <!-- About Text -->
+            <p class="title-text">
+                My journey isn't just about my love for food; it's about giving back. I believe in using the power of cooking to make the world a better place. From food education programs to cooking classes for the community, I'm committed to spreading the joy of good food far and wide.<br> Through my Food Revolution campaigns, I've advocated for healthier school meals and raised awareness about the importance of nutrition for the younger generation. In collaboration with charitable organizations, I've served thousands of hot, nutritious meals to those in need during times of crisis. Join me in this mission to make the world a better place through the transformative power of food.
+            </p>
+            <!-- Read More Button -->
+            <a href="#" class="btn2">Read more</a>
+        </div>
+        <!-- About Image -->
+        <figure class="imgBx">
+            <img src="images/j2.png" alt="" class="fitBg">
+        </figure>
+    </article>
+    
+    <!-- Blog Post Section -->
+    <article class="post container">
+        <!-- Individual Post Boxes -->
+        <article class="post-box">
+            <img src="image/cooking2.png" alt="" class="post-img">
+            <a href="#" class="post-title">The Epicurean Explorer</a>
+            <time class="post-date" datetime="2021-07-12">12th July 2021</time>
+            <p class="post-description">From the bustling streets of London to the vibrant markets of Marrakech, I've embarked on a global quest for culinary excellence. It's a journey that's taken me from humble beginnings to the heart of gourmet innovation</p>
+        </article>
+        <article class="post-box">
+            <img src="image/f4.png" alt="" class="post-img">
+            <a href="#" class="post-title">Kitchen Storyteller</a>
+            <time class="post-date" datetime="2020-11-04">04 Nov 2020</time>
+            <p class="post-description">In my kitchen, every recipe is a story waiting to be tasted. Whether you're a kitchen novice or a seasoned pro, get ready for a flavorful journey as I share the magic of cooking, one dish at a time!</p>
+        </article>
+        <article class="post-box">
+            <img src="image/book.png" alt="" class="post-img">
+            <a href="#" class="post-title">Cooking with Jamie</a>
+            <time class="post-date" datetime="2023-05-04">04 May 2023</time>
+            <p class="post-description">Tune in to my cooking shows where I unravel the secrets of the kitchen. I take you on a gastronomic expedition, sharing tips and mouthwatering recipes that are a feast for the eyes and the palate.</p>
+        </article>
+    </article>
+    <!-- JavaScript Section -->
+    <script>
+        function onMenuClick() {
+          var menuIcon = document.getElementById("menu-icon");
+          var menu = document.querySelector(".menu");
+          var header = document.getElementById("main-header");
+    
+          menu.classList.toggle("responsive");
+          header.classList.toggle("header-open");
+        }
+    </script>
+</body>
+</html>

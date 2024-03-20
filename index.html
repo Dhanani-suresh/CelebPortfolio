@@ -1,0 +1,88 @@
+<!-- Om Namo Naraya Naye -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character set, compatibility, and viewport -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title and external stylesheet links -->
+  <title>Jamie Oliver</title>
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Google Fonts and Font Awesome links -->
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courgette&family=Dancing+Script:wght@600&family=Edu+TAS+Beginner:wght@600&family=Fondamento:ital@1&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <!-- Navigation Section -->
+    <nav>
+      <!-- Logo Section -->
+      <figure class="logo">
+        <img src="image/logo.png" alt="">
+      </figure>
+      <!-- Menu Icon -->
+      <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- Menu List -->
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="aboutPage.html">About</a></li>
+        <li><a href="blogsPage.html">Blogs</a></li>
+        <li><a href="contactPage.html">Contact</a></li>
+      </ul>
+      <!-- Search Box Section -->
+      <div class="search-box">
+        <input type="text" placeholder="Search here...">
+        <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </nav>  
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="main">
+    <!-- Content Section -->
+    <section class="content">
+      <div class="text-content">
+        <!-- Introduction Section -->
+        <div class="intro">A simmering culinary magic</div>
+        <!-- Phrase Section -->
+        <div class="phrase">crafting gastronomic wonders!</div>
+        <!-- Buttons Section -->
+        <div class="buttons">
+          <a href="aboutPage.html"><button>About</button></a>
+          <a href="contactPage.html"><button>Contact</button></a>
+        </div>
+      </div>
+      <!-- Image Section -->
+      <figure class="pic">
+        <img src="image/c.png" alt="">
+      </figure>
+    </section>
+
+    <!-- Aside Section for Media Icons -->
+    <aside class="media-icons">
+      <a href="https://www.facebook.com/jamieoliver/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/jamieoliver"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/the-jamie-oliver-group"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/jamieoliver/?hl=en"><i class="fab fa-instagram"></i></a>
+    </aside>
+  </div>
+
+  <!-- JavaScript Section -->
+  <script>
+    // Function to handle menu click
+    function onMenuClick() {
+      var menuIcon = document.getElementById("menu-icon");
+      var menu = document.querySelector(".menu");
+      var header = document.getElementById("main-header");
+
+      menu.classList.toggle("responsive");
+      header.classList.toggle("header-open");
+    }
+  </script>
+</body>
+</html>

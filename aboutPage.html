@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, viewport, and compatibility -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Title and external stylesheet links -->
+    <title>Jamie Oliver</title>
+    <link rel="stylesheet" href="main.css" />
+    <!-- Google Fonts and Font Awesome links -->
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Courgette&family=Dancing+Script:wght@600&family=Edu+TAS+Beginner:wght@600&family=Fondamento:ital@1&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <!-- Navigation Section -->
+      <nav>
+        <!-- Logo Section -->
+        <figure class="logo">
+          <img src="image/logo.png" alt="">
+        </figure>
+        <!-- Menu Icon -->
+        <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- Menu List -->
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutPage.html" class="active">About</a></li>
+          <li><a href="blogsPage.html">Blogs</a></li>
+          <li><a href="contactPage.html">Contact</a></li>
+        </ul>
+        <!-- Search Box Section -->
+        <div class="search-box">
+          <input type="text" placeholder="Search here...">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+      </nav>  
+    </header>
+
+    <!-- Main Content Section (About Us) -->
+    <main class="about-us">
+      <!-- Profile Image Section -->
+      <figure class="profile">
+        <img src="images/2.png" class="pic" />
+      </figure>
+      <!-- Text Section -->
+      <article class="text">
+        <h2>About Jamie Oliver</h2>
+        <!-- Introduction Text -->
+        <h5>
+          Hey there, I'm Jamie Oliver, your friendly neighborhood culinary wizard! I've been on a lifelong quest to turn ordinary ingredients into extraordinary experiences. From humble beginnings in the kitchen to conquering the world of flavors, my journey has been a delicious adventure. <br>Join me as we dive headfirst into a world of flavors, from mouthwatering meals to tantalizing tales. So, whether you're here to find that perfect recipe, learn something new, or just share the love for food, welcome to Jamie Oliver's delicious universe!
+        </h5>
+      </article>
+    </main>
+
+    <!-- JavaScript Section -->
+    <script>
+      // Function to handle menu click
+      function onMenuClick() {
+        var menuIcon = document.getElementById("menu-icon");
+        var menu = document.querySelector(".menu");
+        var header = document.getElementById("main-header");
+  
+        menu.classList.toggle("responsive");
+        header.classList.toggle("header-open");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, viewport, and compatibility -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Main and Font Awesome stylesheets -->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <!-- Navigation Section -->
+      <nav>
+        <!-- Logo Section -->
+        <figure class="logo">
+          <img src="image/logo.png" alt="">
+        </figure>
+        <!-- Menu Icon -->
+        <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- Menu List -->
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutPage.html">About</a></li>
+          <li><a href="blogsPage.html">Blogs</a></li>
+          <li><a href="contactPage.html" class="active">Contact</a></li>
+        </ul>
+        <!-- Search Box Section -->
+        <div class="search-box">
+          <input type="text" placeholder="Search here...">
+          <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+      </nav>  
+    </header>
+
+    <!-- Contact Form Container -->
+    <div class="form-container">
+      <div class="form">
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+          <h3 class="title">Say Hello!</h3>
+          <p class="text">
+            Have a question, a suggestion, or just want to say hello? <br>Feel free to reach out to me anytime. I'm always eager to hear from fellow food enthusiasts and share culinary ideas!
+          </p>
+          <!-- Social Media Links -->
+          <div class="social-media">
+            <p>Connect with me:</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/jamieoliver/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/jamieoliver">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/jamieoliver/?hl=en">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/the-jamie-oliver-group">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+          <!-- Background Circles -->
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <!-- Contact Form -->
+          <form>
+            <h3 class="title">Contact me</h3>
+            <!-- Input fields with labels -->
+            <div class="input-container">
+              <input type="text" name="name" class="input" placeholder="Username" required />
+              <label for=""></label>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" placeholder="Email Address" required/>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" placeholder="Telephone Number" required pattern="[0-9]{10}" />
+            </div>
+            <!-- Textarea for message -->
+            <div class="input-container textarea">
+              <textarea name="message" class="input" placeholder="Message" required></textarea>
+            </div>
+            <!-- Submit Button -->
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+      function onMenuClick() {
+        var menuIcon = document.getElementById("menu-icon");
+        var menu = document.querySelector(".menu");
+        var header = document.getElementById("main-header");
+  
+        menu.classList.toggle("responsive");
+        header.classList.toggle("header-open");
+      }
+    </script>
+  </body>
+</html>
